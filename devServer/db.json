@@ -142,6 +142,19 @@
       "registerDate": "2023-05-20T16:55:01.320Z",
       "lastUpdatedDate": "2023-05-20T16:55:01.320Z",
       "id": 11
+    },
+    {
+      "name": "chunga",
+      "username": "chunga",
+      "password": "chungachung1!",
+      "gender": "Female",
+      "picture": "https://i1.sndcdn.com/avatars-l4yV0KoRwBydSJud-AW2Oqw-t500x500.jpg",
+      "description": "Just a chonky boiii",
+      "accountStatus": "ACTIVE",
+      "role": "User",
+      "registerDate": "2023-05-20T17:09:01.467Z",
+      "lastUpdatedDate": "2023-05-20T17:09:01.467Z",
+      "id": 12
     }
   ],
   "recipes": [
@@ -149,7 +162,7 @@
       "id": 1,
       "userId": 1,
       "name": "Baked potatoes",
-      "ShortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
       "timeInMinutes": 45,
       "products": [
         "Potatoes",
@@ -172,7 +185,7 @@
       "id": 2,
       "userId": 2,
       "name": "Baked sweet potatoes",
-      "ShortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
       "timeInMinutes": 35,
       "products": [
         "Sweet potatoes",
@@ -195,7 +208,7 @@
       "id": 3,
       "userId": 2,
       "name": "Summer salad",
-      "ShortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
       "timeInMinutes": 15,
       "products": [
         "Tomatoes",
@@ -220,7 +233,7 @@
       "id": 4,
       "userId": 4,
       "name": "Pasta Bolognese",
-      "ShortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
       "timeInMinutes": 35,
       "products": [
         "Pasta",
@@ -245,7 +258,7 @@
       "id": 5,
       "userId": 3,
       "name": "Pasta Carbonara",
-      "ShortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
       "timeInMinutes": 35,
       "products": [
         "Pasta",

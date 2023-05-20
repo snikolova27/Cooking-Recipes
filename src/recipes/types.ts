@@ -12,4 +12,4 @@ export interface Recipe{
     lastUpdatedDate: Date
 }
 
-export type Tag = "VEGETABLES" | "VEGAN" | "EASY" | "SALADS" | "PASTA" | "GLUTEN" | "MEDIUM" | "HARD"
+export type Tag = "VEGETABLES" | "VEGAN" | "EASY" | "SALADS" | "PASTA" | "GLUTEN" | "MEDIUM" | "HARD" | "NEW"

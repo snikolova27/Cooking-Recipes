@@ -61,7 +61,8 @@ export const RegisterForm = () => {
           res.json();
           if (res.status === 201) {
             alert("User created! :)");
-            localStorage.setItem("loggedIn", "true")
+            sessionStorage.setItem("loggedIn", "true")
+            sessionStorage.setItem("username", username)
           }
           console.log(res);
         })

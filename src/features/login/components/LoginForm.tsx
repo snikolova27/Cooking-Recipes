@@ -36,7 +36,9 @@ export const LoginForm = () => {
 
   const handleSubmit = async () => {
     if (isUserValid()) {
+      const username =  getInputValue("username-field");
       sessionStorage.setItem("loggedIn", "true");
+      sessionStorage.setItem("username", username)
       navigate(recipesPath);
     } else {
       alert("Wrong credentials. Please try again.");

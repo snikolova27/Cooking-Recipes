@@ -4,8 +4,10 @@ import "./App.css";
 import { LoginForm } from "./features/login/components/LoginForm";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { WelcomePage } from "./components/WelcomePage/WelcomePage";
-import { loginPath, registerPath } from "./constants";
+import { loginPath, recipesPath, registerPath, userProfile } from "./constants";
 import { RegisterForm } from "./features/register/components/RegisterForm";
+import { UserProfile } from "./features/profile/components/UserProfile";
+import { RecipePage } from "./recipes/components/RecipePage/RecipePage";
 
 export const App = () => {
   useEffect(() => {
@@ -30,6 +32,8 @@ export const App = () => {
           <Route path="/" element={<WelcomePage />} />
           <Route path={loginPath} element={<LoginForm />} />
           <Route path={registerPath} element={<RegisterForm />} />
+          <Route path={userProfile} element={<UserProfile />} />
+          <Route path={recipesPath} element={<RecipePage />} />
         </Routes>
       </div>
     </BrowserRouter>
