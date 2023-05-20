@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
 
-function App() {
+import "./App.css";
+import { LoginForm } from "./features/login/components/LoginForm";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { WelcomePage } from "./components/WelcomePage/WelcomePage";
+import { loginPath, registerPath } from "./constants";
+import { RegisterForm } from "./features/register/components/RegisterForm";
+
+export const App = () => {
+  useEffect(() => {
+    fetch("http://localhost:3005/users")
+      .then((res) => res.json())
+      .then((res) => {
+        localStorage.setItem("users", JSON.stringify(res));
+      })
+
+      .catch((error) => console.log("Error encountered: ", error));
+
+    fetch("http://localhost:3005/recipes")
+      .then((res) => res.json())
+      .then((res) => localStorage.setItem("recipes", JSON.stringify(res)))
+      .catch((error) => console.log("Error encountered: ", error));
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App-header">
+        <Routes>
+          <Route path="/" element={<WelcomePage />} />
+          <Route path={loginPath} element={<LoginForm />} />
+          <Route path={registerPath} element={<RegisterForm />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-}
-
-export default App;
+};
