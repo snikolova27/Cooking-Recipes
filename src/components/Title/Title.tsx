@@ -1,18 +1,9 @@
 import { TitleProps } from "./types";
 
-export const Title = ({ additionalTitle }: TitleProps) => {
+export const Title = ({ title }: TitleProps) => {
   return (
-    <>
-      {additionalTitle && (
-        <p style={{ fontSize: "48px", color: "white", fontFamily: "emoji" }}>
-          {`Cooking Recipes ${additionalTitle}`}
-        </p>
-      )}
-      {!additionalTitle && (
-        <p style={{ fontSize: "48px", color: "white", fontFamily: "emoji" }}>
-          Cooking Recipes
-        </p>
-      )}
-    </>
+    <p style={{ fontSize: "48px", color: "white", fontFamily: "emoji" }}>
+      {title}
+    </p>
   );
 };

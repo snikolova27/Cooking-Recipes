@@ -1,4 +1,5 @@
 import { Recipe } from "../../types";
+import { RecipeButtons } from "../RecipeButtons/RecipeButtons";
 import { RecipeField } from "../RecipeField/RecipeField";
 import { RecipeImage } from "../RecipeImage/RecipeImage";
 import { RecipeTitle } from "../RecipeTitle/RecipeTitle";
@@ -24,7 +25,7 @@ export const RecipeCard = ({
       style={{
         paddingTop: "1.5rem",
         paddingBottom: "4rem",
-        maxWidth: "700px",
+        maxWidth: "600px",
         margin: "auto",
         width: "100%",
         display: "flex",
@@ -42,7 +43,7 @@ export const RecipeCard = ({
       <RecipeField name="Product used: " value={products.toString()}/>
       <RecipeField name="Short description:" value={shortDescription} />
       <RecipeField name="Long description: " value={longDescription}/>
-      
+      <RecipeButtons recipeId={id}/>
 
     </div>
   );

@@ -15,7 +15,7 @@ export const RecipePage = () => {
   const parsedRecipes: Array<Recipe> = JSON.parse(recipes);
   return (
     <>
-    <Title additionalTitle="- Available Recipes"></Title>
+    <Title title="Available Recipes"></Title>
       {parsedRecipes.map((recipe) => (
         <RecipeCard
           id={recipe.id}

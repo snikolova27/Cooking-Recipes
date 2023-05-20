@@ -75,7 +75,7 @@ export const RegisterForm = () => {
   };
   return (
     <>
-      <Title additionalTitle="Registration" />
+      <Title title="Register" />
       <Form
         id={registrationFormName}
         fields={RegistrationFields}
