@@ -49,7 +49,7 @@ export const RegisterForm = ({ isEdit }: RegisterFormProps) => {
         description: desc,
         accountStatus: "ACTIVE",
         role: role as Role,
-        registerDate: new Date(),
+        registerDate: isEdit ? currentUser.registerDate : new Date(),
         lastUpdatedDate: new Date(),
       };
       console.log("User data before sending: ", userData);
