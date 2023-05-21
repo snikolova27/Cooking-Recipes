@@ -44,7 +44,7 @@ export const RecipeForm = ({ onSubmit, isEdit }: RecipeFormProps) => {
         onSubmit={onSubmit}
       >
         <label
-          htmlFor="gender-select"
+          htmlFor="tags-select"
           style={{ alignSelf: "baseline", fontSize: "16px" }}
         >
           Tags

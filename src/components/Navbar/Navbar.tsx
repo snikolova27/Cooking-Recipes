@@ -7,6 +7,7 @@ import {
   recipesCreatePath,
   recipesPath,
   registerPath,
+  searchRecipesPath,
   usersPath,
 } from "../../constants";
 
@@ -27,7 +28,7 @@ export const Navbar = () => {
         WebkitBoxShadow: "0px 0px 14px 0px",
         display: "flex",
         flexDirection: "row",
-        width: "90%",
+        width: "100%",
       }}
     >
       <h1
@@ -62,6 +63,11 @@ export const Navbar = () => {
         {loggedInFromSessionStorage && (
           <li style={{ paddingRight: "20px" }}>
             <Link name="Add recipe" whereTo={recipesCreatePath} />
+          </li>
+        )}
+          {loggedInFromSessionStorage && (
+          <li style={{ paddingRight: "20px" }}>
+            <Link name="Search recipes" whereTo={searchRecipesPath} />
           </li>
         )}
         {loggedInFromSessionStorage && (

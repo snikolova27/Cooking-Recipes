@@ -22,3 +22,12 @@ export const getSelectedValues = (id: string) => {
   }
   return result;
 };
+
+export const  clearSelected = ( id: string) => {
+  var select = document.getElementById(id) as HTMLSelectElement;
+  var elements = select.options;
+
+  for(var i = 0; i < elements.length; i++){
+    elements[i].selected = false;
+  }
+}
