@@ -4,6 +4,7 @@ import {
   homePath,
   loginPath,
   logoutPath,
+  recipesCreatePath,
   recipesPath,
   registerPath,
   usersPath,
@@ -33,8 +34,8 @@ export const Navbar = () => {
         style={{
           margin: "0",
           fontSize: " 1.45em",
-          paddingLeft: "30px",
-          paddingRight: "30%",
+          paddingLeft: "10px",
+          paddingRight: "10%",
         }}
       >
         <a href="/">Cooking Recipes</a>
@@ -60,9 +61,15 @@ export const Navbar = () => {
         </li>
         {loggedInFromSessionStorage && (
           <li style={{ paddingRight: "20px" }}>
+            <Link name="Add recipe" whereTo={recipesCreatePath} />
+          </li>
+        )}
+        {loggedInFromSessionStorage && (
+          <li style={{ paddingRight: "20px" }}>
             <Link name="Log out" whereTo={logoutPath} />
           </li>
         )}
+
         {!loggedInFromSessionStorage && (
           <li style={{ paddingRight: "20px" }}>
             <Link name="Login" whereTo={loginPath} />

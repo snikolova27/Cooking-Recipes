@@ -155,79 +155,42 @@
       "registerDate": "2023-05-20T17:09:01.467Z",
       "lastUpdatedDate": "2023-05-20T17:09:01.467Z",
       "id": 12
+    },
+    {
+      "name": "sami",
+      "username": "samiLuksa",
+      "password": "samiLuksa1!",
+      "gender": "Male",
+      "picture": "https://cdn.punchng.com/wp-content/uploads/2021/04/26133326/Leadway-Money-Boss.jpg",
+      "description": "Luks i pari",
+      "accountStatus": "ACTIVE",
+      "role": "User",
+      "registerDate": "2023-05-21T08:31:55.606Z",
+      "lastUpdatedDate": "2023-05-21T08:31:55.606Z",
+      "id": 13
     }
   ],
   "recipes": [
     {
-      "id": 1,
-      "userId": 1,
-      "name": "Baked potatoes",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
-      "timeInMinutes": 45,
-      "products": [
-        "Potatoes",
-        "chives",
-        "olive oil",
-        "salt",
-        "pepper"
-      ],
-      "picture": "https://cdn.loveandlemons.com/wp-content/uploads/2020/01/baked-potato.jpg",
-      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum turpis eget urna tempor consequat. Aliquam vel cursus purus, id facilisis ipsum. Sed tincidunt turpis at nibh consectetur, ut commodo enim condimentum. Sed ut nisl cursus, pharetra eros vel, semper elit. Pellentesque et eleifend odio. Nulla et enim lorem. Maecenas molestie justo nisl, eget consectetur libero pellentesque non. Ut placerat risus sed ante euismod pellentesque. Donec hendrerit tortor gravida dui rhoncus, quis volutpat lectus iaculis. Aenean laoreet nibh arcu, ac efficitur velit commodo eu. Aenean sit amet dolor quam.Sed augue dolor, rutrum vitae sagittis non, egestas sed velit. Morbi faucibus ipsum et lectus elementum ultricies. Aliquam ultricies elementum viverra. Nam libero risus, bibendum eget porta ut, venenatis in lacus. Praesent porta eros purus, ut molestie quam lobortis sed. Etiam eleifend blandit ante in tristique. Pellentesque eget feugiat sapien. Aenean vestibulum vitae neque nec ullamcorper. Duis id diam lorem. Praesent hendrerit convallis sem, id venenatis urna commodo eu. Proin velit sem, pulvinar id suscipit et, pretium eu arcu. Maecenas in ligula eu nulla mattis bibendum. Maecenas consequat arcu ac convallis tempor. Aliquam rutrum turpis velit, a sollicitudin neque ultricies ut. Proin sit amet efficitur libero, vitae scelerisque magna.Mauris mattis diam diam, non fringilla eros tristique sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sit amet cursus elit. Donec vitae bibendum ex, vitae imperdiet velit. Ut interdum et neque vel condimentum. Ut ut ornare arcu. Donec mauris est, aliquam id leo in, bibendum dictum enim. Nunc in mauris in tortor tristique fermentum vel ut diam. Aenean id nunc eget est condimentum fringilla. Fusce at mi convallis, luctus odio id, consectetur neque. Nunc tortor ipsum, rhoncus sed consectetur in, porttitor sit amet tellus. Maecenas pulvinar velit quis dolor faucibus, in facilisis enim molestie.",
-      "tags": [
-        "VEGETABLES",
-        "VEGAN",
-        "EASY"
-      ],
-      "postedOn": "2020-09-17T09:15:27+00:00",
-      "lastUpdatedDate": "2021-09-17T09:15:27+00:00"
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "name": "Baked sweet potatoes",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
-      "timeInMinutes": 35,
-      "products": [
-        "Sweet potatoes",
-        "chives",
-        "olive oil",
-        "salt",
-        "pepper"
-      ],
-      "picture": "https://www.chelseasmessyapron.com/wp-content/uploads/2019/02/Roasted-Sweet-Potatoes-1.jpg",
-      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum turpis eget urna tempor consequat. Aliquam vel cursus purus, id facilisis ipsum. Sed tincidunt turpis at nibh consectetur, ut commodo enim condimentum. Sed ut nisl cursus, pharetra eros vel, semper elit. Pellentesque et eleifend odio. Nulla et enim lorem. Maecenas molestie justo nisl, eget consectetur libero pellentesque non. Ut placerat risus sed ante euismod pellentesque. Donec hendrerit tortor gravida dui rhoncus, quis volutpat lectus iaculis. Aenean laoreet nibh arcu, ac efficitur velit commodo eu. Aenean sit amet dolor quam.Sed augue dolor, rutrum vitae sagittis non, egestas sed velit. Morbi faucibus ipsum et lectus elementum ultricies. Aliquam ultricies elementum viverra. Nam libero risus, bibendum eget porta ut, venenatis in lacus. Praesent porta eros purus, ut molestie quam lobortis sed. Etiam eleifend blandit ante in tristique. Pellentesque eget feugiat sapien. Aenean vestibulum vitae neque nec ullamcorper. Duis id diam lorem. Praesent hendrerit convallis sem, id venenatis urna commodo eu. Proin velit sem, pulvinar id suscipit et, pretium eu arcu. Maecenas in ligula eu nulla mattis bibendum. Maecenas consequat arcu ac convallis tempor. Aliquam rutrum turpis velit, a sollicitudin neque ultricies ut. Proin sit amet efficitur libero, vitae scelerisque magna.Mauris mattis diam diam, non fringilla eros tristique sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sit amet cursus elit. Donec vitae bibendum ex, vitae imperdiet velit. Ut interdum et neque vel condimentum. Ut ut ornare arcu. Donec mauris est, aliquam id leo in, bibendum dictum enim. Nunc in mauris in tortor tristique fermentum vel ut diam. Aenean id nunc eget est condimentum fringilla. Fusce at mi convallis, luctus odio id, consectetur neque. Nunc tortor ipsum, rhoncus sed consectetur in, porttitor sit amet tellus. Maecenas pulvinar velit quis dolor faucibus, in facilisis enim molestie.",
-      "tags": [
-        "VEGETABLES",
-        "VEGAN",
-        "EASY"
-      ],
-      "postedOn": "2021-09-17T09:15:27+00:00",
-      "lastUpdatedDate": "2022-09-17T09:15:27+00:00"
-    },
-    {
       "id": 3,
-      "userId": 2,
-      "name": "Summer salad",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
-      "timeInMinutes": 15,
+      "userId": 3,
+      "name": "Shopsa salad 3",
+      "shortDescription": "some short desc",
+      "timeInMinutes": 12,
       "products": [
         "Tomatoes",
-        "Cucumbers",
-        "White cheese",
-        "Olive oil",
-        "Salt",
-        "Red pepper",
-        "Onion"
+        " cucumbers",
+        " onion"
       ],
       "picture": "https://dostavka.happy.bg/remote/files/images/196/fit_640_400.png?rev=0",
-      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum turpis eget urna tempor consequat. Aliquam vel cursus purus, id facilisis ipsum. Sed tincidunt turpis at nibh consectetur, ut commodo enim condimentum. Sed ut nisl cursus, pharetra eros vel, semper elit. Pellentesque et eleifend odio. Nulla et enim lorem. Maecenas molestie justo nisl, eget consectetur libero pellentesque non. Ut placerat risus sed ante euismod pellentesque. Donec hendrerit tortor gravida dui rhoncus, quis volutpat lectus iaculis. Aenean laoreet nibh arcu, ac efficitur velit commodo eu. Aenean sit amet dolor quam.Sed augue dolor, rutrum vitae sagittis non, egestas sed velit. Morbi faucibus ipsum et lectus elementum ultricies. Aliquam ultricies elementum viverra. Nam libero risus, bibendum eget porta ut, venenatis in lacus. Praesent porta eros purus, ut molestie quam lobortis sed. Etiam eleifend blandit ante in tristique. Pellentesque eget feugiat sapien. Aenean vestibulum vitae neque nec ullamcorper. Duis id diam lorem. Praesent hendrerit convallis sem, id venenatis urna commodo eu. Proin velit sem, pulvinar id suscipit et, pretium eu arcu. Maecenas in ligula eu nulla mattis bibendum. Maecenas consequat arcu ac convallis tempor. Aliquam rutrum turpis velit, a sollicitudin neque ultricies ut. Proin sit amet efficitur libero, vitae scelerisque magna.Mauris mattis diam diam, non fringilla eros tristique sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sit amet cursus elit. Donec vitae bibendum ex, vitae imperdiet velit. Ut interdum et neque vel condimentum. Ut ut ornare arcu. Donec mauris est, aliquam id leo in, bibendum dictum enim. Nunc in mauris in tortor tristique fermentum vel ut diam. Aenean id nunc eget est condimentum fringilla. Fusce at mi convallis, luctus odio id, consectetur neque. Nunc tortor ipsum, rhoncus sed consectetur in, porttitor sit amet tellus. Maecenas pulvinar velit quis dolor faucibus, in facilisis enim molestie.",
+      "longDescription": "some long desc",
       "tags": [
-        "VEGETABLES",
-        "EASY",
-        "SALADS"
+        "SALADS",
+        "VEGAN",
+        "VEGETABLES"
       ],
       "postedOn": "2021-09-17T09:15:27+00:00",
-      "lastUpdatedDate": "2022-09-17T09:15:27+00:00"
+      "lastUpdatedDate": "2023-05-21T10:10:13.232Z"
     },
     {
       "id": 4,
@@ -256,28 +219,53 @@
     },
     {
       "id": 5,
-      "userId": 3,
-      "name": "Pasta Carbonara",
+      "userId": 4,
+      "name": "Pasta Bolognese 2",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet arcu et consectetur pellentesque. Quisque sodales vel ligula et elementum. Proin ut enim eu ex imperdiet fermentum nec accumsan odio. Quisque sagittis sapien ligula, sit amet tristique sem pellentesque vel. Sed bibendum ligula imperdiet mauris pretium faucibus. Sed posuere urna vel nunc venenatis convallis. Proin sit amet ligula et tortor auctor auctor eget vel sapien. Nunc consectetur placerat mauris id molestie.",
       "timeInMinutes": 35,
       "products": [
         "Pasta",
-        "Bacon",
-        "Eggs",
+        "Mince",
+        "Tomato paste",
         "Onion",
         "Black pepper",
         "Salt",
         "Parmesan"
       ],
-      "picture": "https://s23209.pcdn.co/wp-content/uploads/2014/03/IMG_2694edit-1.jpg",
+      "picture": "https://hips.hearstapps.com/hmg-prod/images/delish-bolognese-horizontal-1-1540572556.jpg?crop=0.668xw:1.00xh;0.107xw,0.00240xh&resize=1200:*",
       "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum turpis eget urna tempor consequat. Aliquam vel cursus purus, id facilisis ipsum. Sed tincidunt turpis at nibh consectetur, ut commodo enim condimentum. Sed ut nisl cursus, pharetra eros vel, semper elit. Pellentesque et eleifend odio. Nulla et enim lorem. Maecenas molestie justo nisl, eget consectetur libero pellentesque non. Ut placerat risus sed ante euismod pellentesque. Donec hendrerit tortor gravida dui rhoncus, quis volutpat lectus iaculis. Aenean laoreet nibh arcu, ac efficitur velit commodo eu. Aenean sit amet dolor quam.Sed augue dolor, rutrum vitae sagittis non, egestas sed velit. Morbi faucibus ipsum et lectus elementum ultricies. Aliquam ultricies elementum viverra. Nam libero risus, bibendum eget porta ut, venenatis in lacus. Praesent porta eros purus, ut molestie quam lobortis sed. Etiam eleifend blandit ante in tristique. Pellentesque eget feugiat sapien. Aenean vestibulum vitae neque nec ullamcorper. Duis id diam lorem. Praesent hendrerit convallis sem, id venenatis urna commodo eu. Proin velit sem, pulvinar id suscipit et, pretium eu arcu. Maecenas in ligula eu nulla mattis bibendum. Maecenas consequat arcu ac convallis tempor. Aliquam rutrum turpis velit, a sollicitudin neque ultricies ut. Proin sit amet efficitur libero, vitae scelerisque magna.Mauris mattis diam diam, non fringilla eros tristique sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sit amet cursus elit. Donec vitae bibendum ex, vitae imperdiet velit. Ut interdum et neque vel condimentum. Ut ut ornare arcu. Donec mauris est, aliquam id leo in, bibendum dictum enim. Nunc in mauris in tortor tristique fermentum vel ut diam. Aenean id nunc eget est condimentum fringilla. Fusce at mi convallis, luctus odio id, consectetur neque. Nunc tortor ipsum, rhoncus sed consectetur in, porttitor sit amet tellus. Maecenas pulvinar velit quis dolor faucibus, in facilisis enim molestie.",
       "tags": [
-        "HARD",
+        "MEDIUM",
         "PASTA",
         "GLUTEN"
       ],
       "postedOn": "2021-09-17T09:15:27+00:00",
       "lastUpdatedDate": "2022-09-17T09:15:27+00:00"
+    },
+    {
+      "userId": 1,
+      "name": "Rice with vegetables",
+      "shortDescription": "Rice with veggies short desc",
+      "longDescription": "Rice with veggies long long long long looooong very long desc",
+      "timeInMinutes": 40,
+      "products": [
+        "Rice",
+        " carrots",
+        " onions",
+        " peas",
+        " corn"
+      ],
+      "picture": "https://www.budgetbytes.com/wp-content/uploads/2022/03/Vegetable-Fried-Rice-plate.jpg",
+      "postedOn": "2023-05-21T10:30:34.232Z",
+      "lastUpdatedDate": "2023-05-21T10:30:34.232Z",
+      "tags": [
+        "EASY",
+        "NEW",
+        "VEGETABLES",
+        "VEGETARIAN",
+        "NO-FRY"
+      ],
+      "id": 6
     }
   ]
 }

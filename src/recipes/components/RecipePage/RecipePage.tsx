@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import { Title } from "../../../components/Title/Title";
 import { Recipe } from "../../types";
 import { RecipeCard } from "../RecipeCard/RecipeCard";
 
 export const RecipePage = () => {
+  useEffect(() => {
+    fetch("http://localhost:3005/recipes")
+      .then((res) => res.json())
+      .then((res) => localStorage.setItem("recipes", JSON.stringify(res)))
+      .catch((error) => console.log("Error encountered: ", error));
+  });
+  
   const recipes = localStorage.getItem("recipes");
 
   if (!recipes) {
@@ -13,9 +21,10 @@ export const RecipePage = () => {
     );
   }
   const parsedRecipes: Array<Recipe> = JSON.parse(recipes);
+
   return (
     <>
-    <Title title="Available Recipes"></Title>
+      <Title title="Available Recipes"></Title>
       {parsedRecipes.map((recipe) => (
         <RecipeCard
           id={recipe.id}

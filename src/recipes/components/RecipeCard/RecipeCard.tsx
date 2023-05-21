@@ -20,6 +20,10 @@ export const RecipeCard = ({
 }: Recipe) => {
   const author = getAuthorName(userId);
 
+  if(!id){
+    return <></>
+  }
+
   return (
     <div
       style={{

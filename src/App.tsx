@@ -8,8 +8,10 @@ import {
   homePath,
   loginPath,
   logoutPath,
+  recipesCreatePath,
   recipesPath,
   registerPath,
+  searchRecipesPath,
   userProfile,
 } from "./constants";
 import { RegisterForm } from "./features/register/components/RegisterForm";
@@ -17,6 +19,9 @@ import { UserProfile } from "./features/profile/components/UserProfile";
 import { RecipePage } from "./recipes/components/RecipePage/RecipePage";
 import { Navbar } from "./components/Navbar/Navbar";
 import { LogoutPage } from "./features/logout/LogoutPage";
+import { EditRecipe } from "./recipes/EditRecipe/EditRecipe";
+import { CreateRecipe } from "./recipes/components/CreateRecipe/CreateRecipe";
+import { SearchRecipes } from "./recipes/components/SearchRecipes/SearchRecipes";
 
 export const App = () => {
   useEffect(() => {
@@ -45,6 +50,9 @@ export const App = () => {
           <Route path={registerPath} element={<RegisterForm />} />
           <Route path={userProfile} element={<UserProfile />} />
           <Route path={recipesPath} element={<RecipePage />} />
+          <Route path={recipesCreatePath} element={<CreateRecipe />} />
+          <Route path={searchRecipesPath} element={<SearchRecipes />} />
+          <Route path={`${recipesPath}/edit/:id`} element={<EditRecipe />} />
         </Routes>
       </div>
     </BrowserRouter>
