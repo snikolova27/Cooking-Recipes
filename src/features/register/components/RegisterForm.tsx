@@ -14,12 +14,16 @@ import { Form } from "../../../components/Form/Form";
 import { BackHomeButton } from "../../../components/BackHomeButton/BackHomeButton";
 import { getInputValue, getSelectValue } from "../../../utils";
 import { Gender, Role, User } from "../../../users/types";
-import { recipesPath } from "../../../constants";
+import { recipesPath, usersPath } from "../../../constants";
 import { useNavigate } from "react-router-dom";
+import { RegisterFormProps } from "./types.";
 
-export const RegisterForm = () => {
+export const RegisterForm = ({ isEdit }: RegisterFormProps) => {
   const navigate = useNavigate();
   const passRegex = new RegExp("(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
+  const currentUser: User = JSON.parse(
+    localStorage.getItem("currentUser") ?? ""
+  );
 
   const handleSubmit = () => {
     const desc = getInputValue(registerShortDesc);
@@ -48,34 +52,55 @@ export const RegisterForm = () => {
         registerDate: new Date(),
         lastUpdatedDate: new Date(),
       };
-      console.log("User data before sent: ", userData);
+      console.log("User data before sending: ", userData);
 
-      fetch("http://localhost:3005/users", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userData),
-      })
-        .then((res) => {
-          res.json();
-          if (res.status === 201) {
-            alert("User created! :)");
-            sessionStorage.setItem("loggedIn", "true")
-            sessionStorage.setItem("username", username)
-          }
-          console.log(res);
+      if (!isEdit) {
+        fetch("http://localhost:3005/users", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
         })
-        .catch((error) => console.log("Error: ", error));
+          .then((res) => {
+            res.json();
+            if (res.status === 201) {
+              alert("User created! :)");
+              sessionStorage.setItem("loggedIn", "true");
+              sessionStorage.setItem("username", username);
+            } else {
+              alert("Validation failed. Try again please.");
+            }
+            console.log(res);
+          })
+          .catch((error) => console.log("Error: ", error));
 
-      navigate(recipesPath);
-    } else {
-      alert("Validation failed. Try again please.");
+        navigate(recipesPath);
+      } else if (currentUser && isEdit) {
+        fetch(`http://localhost:3005/users/${currentUser.id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        })
+          .then((res) => {
+            res.json();
+            if (res.status === 201) {
+              alert("User updated! :)");
+            } 
+            console.log(res);
+          })
+          .catch((error) => console.log("Error: ", error));
+
+        navigate(usersPath);
+      }
     }
   };
   return (
     <>
-      <Title title="Register" />
+      {" "}
+      {!isEdit && <Title title="Register" />}
       <Form
         id={registrationFormName}
         fields={RegistrationFields}
@@ -93,9 +118,9 @@ export const RegisterForm = () => {
           style={{ width: "100%" }}
           form={registrationFormName}
         >
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-          <option value="other">Other</option>
+          <option value="FEMALE">FEMALE</option>
+          <option value="MALE">MALE</option>
+          <option value="OTHER">OTHER</option>
         </select>
         <br></br>
         <label

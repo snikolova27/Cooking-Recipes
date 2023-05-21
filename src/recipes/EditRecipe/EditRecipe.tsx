@@ -1,13 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { Title } from "../../components/Title/Title";
-import { Recipe, Tag, Tags } from "../types";
+import { Recipe, Tag } from "../types";
 import { homePath, recipesPath } from "../../constants";
-import { RecipeImage } from "../components/RecipeImage/RecipeImage";
-import { Button } from "../../components/Button/Button";
-import { Form } from "../../components/Form/Form";
 import {
-  EditRecipeFields,
-  editRecipeFormName,
   editRecipeLongDesc,
   editRecipeName,
   editRecipePicture,
