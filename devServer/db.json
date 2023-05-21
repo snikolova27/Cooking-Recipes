@@ -266,6 +266,30 @@
         "NO-FRY"
       ],
       "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "Banitsa",
+      "shortDescription": "BEST BANITSA EVER",
+      "longDescription": "BEST BANITSA EVER BEST BANITSA EVER BEST BANITSA EVER BEST BANITSA EVER BEST BANITSA EVER ",
+      "timeInMinutes": 70,
+      "products": [
+        "eggs",
+        " youghurt",
+        " cheese",
+        " pastry"
+      ],
+      "picture": "https://www.happyfoodstube.com/wp-content/uploads/2015/09/banitsa-recipe.jpg",
+      "postedOn": "2023-05-21T11:32:08.183Z",
+      "lastUpdatedDate": "2023-05-21T11:32:08.183Z",
+      "tags": [
+        "EGGS",
+        "GLUTEN",
+        "MEDIUM",
+        "BREAKFAST",
+        "NO-FRY"
+      ],
+      "id": 7
     }
   ]
 }

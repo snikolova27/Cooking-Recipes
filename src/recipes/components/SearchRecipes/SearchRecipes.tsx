@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../../../components/Button/Button";
 import { Title } from "../../../components/Title/Title";
 import { clearSelected, getSelectedValues } from "../../../utils";
@@ -12,6 +12,11 @@ export const SearchRecipes = () => {
   const parsedUsers: Array<User> = JSON.parse(users ?? "");
   const [displayedRecipes, setDisplayedRecipes] = useState<Array<Recipe>>([]);
 
+  const sortRecipes = () => {
+    displayedRecipes.sort((recipeOne, recipeTwo) =>
+      recipeOne.postedOn < recipeTwo.postedOn ? -1 : 1
+    );
+  };
   const onClearTagSelection = () => {
     clearSelected("tags-select-search");
   };
@@ -19,6 +24,10 @@ export const SearchRecipes = () => {
   const onClearUserSelection = () => {
     clearSelected("user-select-search");
   };
+
+  useEffect(() => {
+    sortRecipes();
+  });
 
   const onSearch = () => {
     const selectedUsers = getSelectedValues("user-select-search");
@@ -36,8 +45,8 @@ export const SearchRecipes = () => {
         isRecipeByOneOfUsers(recipe.userId, selectedUsers)
       );
       console.log(filteredByUser);
-      if(filteredByUser.length === 0){
-        alert("No recipes match your search.")
+      if (filteredByUser.length === 0) {
+        alert("No recipes match your search.");
       }
       setDisplayedRecipes(filteredByUser);
       return;
@@ -47,8 +56,8 @@ export const SearchRecipes = () => {
         doesRecipeContainAnyOfTheTags(recipe, selectedTags as Array<Tag>)
       );
       console.log(filteredByTags);
-      if(filteredByTags.length === 0){
-        alert("No recipes match your search.")
+      if (filteredByTags.length === 0) {
+        alert("No recipes match your search.");
       }
       setDisplayedRecipes(filteredByTags);
       return;
@@ -61,8 +70,8 @@ export const SearchRecipes = () => {
       doesRecipeContainAnyOfTheTags(recipe, selectedTags as Array<Tag>)
     );
     console.log(filteredByTags);
-    if(filteredByTags.length === 0){
-        alert("No recipes match your search.")
+    if (filteredByTags.length === 0) {
+      alert("No recipes match your search.");
     }
     setDisplayedRecipes(filteredByTags);
   };
@@ -117,7 +126,7 @@ export const SearchRecipes = () => {
         </select>
         <br></br>
 
-        <div style={{paddingLeft:"35%"}}>
+        <div style={{ paddingLeft: "35%" }}>
           <div>
             <Button value="Search" onClick={onSearch} />
           </div>
