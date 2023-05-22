@@ -6,6 +6,7 @@ import {
   registerPassField,
   registerRoleField,
   registerShortDesc,
+  registerStatusField,
   registerUrlField,
   registerUsernameField,
   registrationFormName,
@@ -13,7 +14,7 @@ import {
 import { Form } from "../../../components/Form/Form";
 import { BackHomeButton } from "../../../components/BackHomeButton/BackHomeButton";
 import { getInputValue, getSelectValue } from "../../../utils";
-import { Gender, Role, User } from "../../../users/types";
+import { AccountStatus, Gender, Role, User } from "../../../users/types";
 import { recipesPath, usersPath } from "../../../constants";
 import { useNavigate } from "react-router-dom";
 import { RegisterFormProps } from "./types.";
@@ -39,6 +40,7 @@ export const RegisterForm = ({ isEdit }: RegisterFormProps) => {
       const pictureUrl = getInputValue(registerUrlField);
       const gender = getSelectValue(registerGenderField);
       const role = getSelectValue(registerRoleField);
+      const status = getSelectValue(registerStatusField)
 
       const userData: User = {
         name: name,
@@ -47,7 +49,7 @@ export const RegisterForm = ({ isEdit }: RegisterFormProps) => {
         gender: gender as Gender,
         picture: pictureUrl,
         description: desc,
-        accountStatus: "ACTIVE",
+        accountStatus: isEdit ? status as AccountStatus : "ACTIVE",
         role: role as Role,
         registerDate: isEdit ? currentUser.registerDate : new Date(),
         lastUpdatedDate: new Date(),
@@ -139,6 +141,25 @@ export const RegisterForm = ({ isEdit }: RegisterFormProps) => {
           <option value="user">User</option>
         </select>
         <br></br>
+
+        <label
+          htmlFor="status-select"
+          style={{ alignSelf: "baseline", fontSize: "16px" }}
+        >
+          Role
+        </label>
+        <select
+          name="status-select"
+          id={registerStatusField}
+          style={{ width: "100%" }}
+          form={registrationFormName}
+        >
+          <option value="ACTIVE">ACTIVE</option>
+          <option value="DEACTIVATED">DEACTIVATED</option>
+          <option value="SUSPENDED">SUSPENDED</option>
+        </select>
+        <br></br>
+
         <label
           htmlFor="short-desc"
           style={{ alignSelf: "baseline", fontSize: "16px" }}

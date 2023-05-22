@@ -6,6 +6,7 @@ export const registerUrlField = "register-picture-field"
 export const registerGenderField = "register-gender-select"
 export const registerRoleField = "register-role-select"
 export const registerShortDesc = "register-short-desc"
+export const registerStatusField = "register-status-field"
 
 export const RegistrationFields = [
   {
