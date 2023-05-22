@@ -22,9 +22,6 @@
   },
   "scripts": {
     "frontend": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "serverStart": "json-server --watch devServer/db.json --port 3005 --routes devServer/routes.json"
   },
   "eslintConfig": {
