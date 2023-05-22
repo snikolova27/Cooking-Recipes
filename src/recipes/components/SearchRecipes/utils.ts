@@ -28,3 +28,7 @@ export const doesRecipeContainAnyOfTheTags = (
 ) => {
   return recipe.tags.filter((tag) => tags.includes(tag)).length > 0;
 };
+
+export const getFirstTenRecipes = (recipes: Array<Recipe>) => {
+  return recipes.slice(0, 10)
+}

@@ -5,7 +5,7 @@ import { clearSelected, getSelectedValues } from "../../../utils";
 import { Recipe, Tag, Tags } from "../../types";
 import { RecipeCard } from "../RecipeCard/RecipeCard";
 import { User } from "../../../users/types";
-import { doesRecipeContainAnyOfTheTags, isRecipeByOneOfUsers } from "./utils";
+import { doesRecipeContainAnyOfTheTags, getFirstTenRecipes, isRecipeByOneOfUsers } from "./utils";
 
 export const SearchRecipes = () => {
   const users = localStorage.getItem("users");
@@ -38,7 +38,7 @@ export const SearchRecipes = () => {
     console.log(selectedTags);
 
     if (selectedTags.length === 0 && selectedUsers.length === 0) {
-      setDisplayedRecipes(parsedRecipes);
+      setDisplayedRecipes(getFirstTenRecipes(parsedRecipes));
     }
     if (selectedTags.length === 0 && selectedUsers.length > 0) {
       const filteredByUser = parsedRecipes.filter((recipe) =>
@@ -48,7 +48,7 @@ export const SearchRecipes = () => {
       if (filteredByUser.length === 0) {
         alert("No recipes match your search.");
       }
-      setDisplayedRecipes(filteredByUser);
+      setDisplayedRecipes(getFirstTenRecipes(filteredByUser));
       return;
     }
     if (selectedUsers.length === 0 && selectedTags.length > 0) {
@@ -59,7 +59,7 @@ export const SearchRecipes = () => {
       if (filteredByTags.length === 0) {
         alert("No recipes match your search.");
       }
-      setDisplayedRecipes(filteredByTags);
+      setDisplayedRecipes(getFirstTenRecipes(filteredByTags));
       return;
     }
 
@@ -73,7 +73,7 @@ export const SearchRecipes = () => {
     if (filteredByTags.length === 0) {
       alert("No recipes match your search.");
     }
-    setDisplayedRecipes(filteredByTags);
+    setDisplayedRecipes(getFirstTenRecipes(filteredByTags));
   };
 
   return (
