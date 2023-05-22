@@ -65,11 +65,11 @@ export const Navbar = () => {
             <Link name="Add recipe" whereTo={recipesCreatePath} />
           </li>
         )}
-          {loggedInFromSessionStorage && (
+          
           <li style={{ paddingRight: "20px" }}>
             <Link name="Search recipes" whereTo={searchRecipesPath} />
           </li>
-        )}
+        
         {loggedInFromSessionStorage && (
           <li style={{ paddingRight: "20px" }}>
             <Link name="Log out" whereTo={logoutPath} />
