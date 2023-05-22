@@ -79,19 +79,6 @@
       "id": 7
     },
     {
-      "name": "",
-      "username": "",
-      "password": "",
-      "gender": "MALE",
-      "picture": "",
-      "description": "Enter your short description here...",
-      "accountStatus": "ACTIVE",
-      "role": "Admin",
-      "registerDate": "2023-05-20T16:44:44.587Z",
-      "lastUpdatedDate": "2023-05-20T16:44:44.587Z",
-      "id": 9
-    },
-    {
       "name": "Some One 3",
       "username": "someone3",
       "password": "some-pass-4%",
@@ -316,6 +303,31 @@
         "NO-FRY"
       ],
       "id": 8
+    },
+    {
+      "userId": 15,
+      "name": "Beans 2",
+      "shortDescription": "Prepare for trouble",
+      "longDescription": "Prepare for trouble and make it double!",
+      "timeInMinutes": 80,
+      "products": [
+        "Beans",
+        " onions",
+        " carrots",
+        " spearmint",
+        " salt",
+        " pepper",
+        " butter"
+      ],
+      "picture": "https://cdn.actualno.eu/actualno_2013/upload/news/2021/02/23/0471485001614099594_1562882_920x708.webp",
+      "postedOn": "2023-05-22T15:38:24.255Z",
+      "lastUpdatedDate": "2023-05-22T15:38:24.255Z",
+      "tags": [
+        "HARD",
+        "VEGETABLES",
+        "VEGETARIAN"
+      ],
+      "id": 9
     }
   ]
 }
